@@ -80,12 +80,14 @@ img {
 /* .home-image{
 	text-align: right;
 } */
-
+/* .home{
+	float: left;
+}
 .about-text{
 	color: white;
 	width: 50%;
 
-}
+} */
 .skill-btn{
 	background-color: transparent;
 	color: white;
@@ -106,4 +108,25 @@ img {
 }
 .work >h4, .education>h4{
 	font-weight: 500;
+}
+
+.home {
+	width: 100%;
+	display: flex;
+}
+.about-text {
+	width: 50%;
+	flex: 0 0 50%;
+	color: white;
+}
+.myname {
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	width: 50%;
+	flex:1;
+}
+.myname > img{
+	width: 50%;
+	display: inline-block;
 }

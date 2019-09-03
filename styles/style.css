@@ -38,7 +38,7 @@
 	display: inline;
 	color: white;
 }
-body{background-color: #e056fd;
+body{background-color: brown;
 background-image: linear-gradient(to right, 	#800000 0%, #000000 74%);
 }
 .dropdown {
@@ -129,4 +129,9 @@ img {
 .myname > img{
 	width: 50%;
 	display: inline-block;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(243, 243, 243, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }

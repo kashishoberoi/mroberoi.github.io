@@ -39,7 +39,7 @@
 	color: white;
 }
 body{background-color: brown;
-background-image: linear-gradient(to right, 	#800000 0%, #000000 74%);
+background-image: linear-gradient(to right, 	#800000 20%, #000000 74%);
 }
 .dropdown {
 	padding-top: 0px;
@@ -134,4 +134,35 @@ hr {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(243, 243, 243, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+.project-bin{
+	background-color: transparent;
+	color: white;
+	size: 100%;
+	font-size: 20px;
+	padding: 14px 16px;
+	 border: 1px solid white;
+	 border-radius: 5px;
+	 width: 20%;
+}
+.project-bin > img{
+	width: 100%;
+}
+.project-bin > button{
+	background-color: transparent;
+	color: white;
+	size: 100%;
+	font-size: 20px;
+	 border: 0.5px solid white;
+}
+.project-bin > button:hover{
+	border: 1px solid white;
+  font-weight: bold;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.project-bin > p.mainp {
+	display: inline;
+}
+.more {
+	display: none;
 }

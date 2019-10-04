@@ -15,7 +15,7 @@
 	 border: 0px;
 }
 .nav-bar-btn-drop{
-	background-color:maroon;
+	background-color:rgb(2, 2, 49);
 	color: white;
 	width: 100%;
 	size: 100%;
@@ -32,14 +32,14 @@
 }
 .nav-bar button:focus, .nav-bar-btn-active{
 	border: 2px solid white;
-  background-color: brown;
+  background-color: rgb(2, 2, 49);
 }
 .nav-bar-name{
 	display: inline;
 	color: white;
 }
-body{background-color: brown;
-background-image: linear-gradient(to right, 	#800000 20%, #000000 74%);
+body{background-color: rgb(2, 2, 49);
+background-image: linear-gradient(to right, rgb(2, 2, 49) 20%, #000000 74%);
 }
 .dropdown {
 	padding-top: 0px;

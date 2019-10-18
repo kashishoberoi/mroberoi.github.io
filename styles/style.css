@@ -144,6 +144,11 @@ hr {
 	 border: 1px solid white;
 	 border-radius: 5px;
 	 width: 20%;
+	 text-align: center;
+	 float:left;
+	width:25%;
+	height: 500px;
+
 }
 .project-bin > img{
 	width: 100%;
@@ -162,6 +167,13 @@ hr {
 }
 .project-bin > p.mainp {
 	display: inline;
+}
+.project-main{
+	width:100%;
+    margin: 0 auto;
+    margin-top:75px;
+    height:250px;
+    border:1px solid black;
 }
 .more {
 	display: none;

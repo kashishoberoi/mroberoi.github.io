@@ -1,64 +1,90 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Profile</title>
-	<script type="text/javascript" src="./scripts/index-script.js"></script>
-	<link rel="stylesheet" type="text/css" href="./styles/style.css">
-</head>
-<body>
-	<div class="nav-bar">
-		<button class=" nav-bar-btn" onclick="window.location.href='./index.html'">Home</button>
-		<!-- <button class="nav-bar-btn " onclick="window.location.href='./blog.html'">Blog</button> -->
-		<button class="nav-bar-btn nav-bar-btn-active" onclick="window.location.href='./projects.html'">Projects</button>
-		<div class="dropdown">
-    		<button class="drop-btn">Social</button>
-    		<div class="dropdown-content">
-      			<button class="nav-bar-btn-drop" onclick="window.location.href='https://www.facebook.com/kashish15'">Facebook</button>
-      			<button class="nav-bar-btn-drop" onclick="window.location.href='https://www.linkedin.com/in/oberoi-kashish'">LinkedIN</button>
-      			<button class="nav-bar-btn-drop" onclick="window.location.href='https://github.com/kashishoberoi'">Github</button>
-    		</div>
-  		</div> 
-		<button class="nav-bar-btn" onclick="window.location.href='./contact.html'">Contact Me</button>
-	</div>
-	<br /><br />
-	<div class="project-main">
-		<div class="project-bin" id="1">
-			<h3>Lip Reading</h3>
-			<img src="images/projects/1.jpg">
-			<p class="mainp">This project aims at tracking the lip region based on colour and shape information. This project begins with the videos being shot focused basically to the lip area. The video thus obtained will be segmented to frames which are used for designing <span id="1-dots" class="dots">...</span> <span id="1-more" class="more">and implementing the experimental models. Further, the extracted images will be processed using MATLAB to correlate every lip image to its equivalent syllable. The final output of this system is the text display of the alphabet spoken by the speaker.  The experimental results have been tested on different frames under constraints of illumination condition and head motion.</span></p>
-			<button onclick="myRead(event)" class="myBtn" id="1-myBtn">Read more</button>
-			<br />
-			<p ali>See Code:<a href="https://github.com/kashishoberoi/LIP_READING">Github link</a></p>
-			<p>See Report:<a href="https://docs.google.com/document/d/1xWLPI2FJ_T_W91uYpKypwHdwfv371N8v_MaXST-SvGQ/edit?usp=sharing">Google Docx</a></p>
-		</div>
-		 
-		<div class="project-bin" id="2">
-			<h3>Web Traffic Forecasting</h3>
-			<img src="images/projects/2.png">
-			<p class="mainp">With the recent advancements in internet technology, there is an urge to effectively forecast web traffic. The forecast will help the web servers to handle web requests efficiently.<span id="2-dots" class="dots">...</span> <span id="2-more" class="more">Here, we are using the Web Traffic Time Series Forecasting dataset by Google to predict future traffic of Wikipedia articles.</span></p>
-			<button onclick="myRead(event)" class="myBtn" id="2-myBtn">Read more</button>
-			<br />
-			<p ali>See Code:<a href="https://github.com/kashishoberoi/WebTrafficTimeSeries">Github link</a></p>
-			<p>See Blog:<a href="https://webtrafficforecasting.blogspot.com/">Blogspot</a></p>
-		</div>
+    <head>
+        <title>
 
-		<div class="project-bin" id="2">
-			<h3>SmartDate: Dating Recommendion System</h3>
-			<img src="images/projects/SmartDate.png" width="50%" maxheight = '50%'>
-			<p class="mainp">A dating recommendation system: Data mining from 50 regions from around the globe using tinder and OkCupid. Recommendations based on scores using knowledge graph. <span id="3-dots" class="dots">...</span> <span id="3-more" class="more">Used Deep Knowledge-Aware Network and Collaborative filtering for knowledge inference and to make recommendations.</span></p>
-			<button onclick="myRead(event)" class="myBtn" id="2-myBtn">Read more</button>
-			<br />
-			<p ali>See Code:<a href="https://github.com/kashishoberoi/SmartDate">Github link</a></p>
-		</div>
-
-		<div class="project-bin" id="2">
-			<h3>Tax Guide Query-Response Recommendion System</h3>
-			<img src="images/projects/EY.jpg" width="50%" maxheight = '50%'>
-			<p class="mainp">This project was a part of the EY Silver Badge AI Challenge. An interactive system for recommendations from TAX GUIDE was developed using BM25+ model. The data was pre-processed and bag of words approach was combined with  <span id="3-dots" class="dots">...</span> <span id="3-more" class="more">the knowledge of n-grams and POS tags. A flask-python based website was deployed on the SAP cloud.</span></p>
-			<button onclick="myRead(event)" class="myBtn" id="2-myBtn">Read more</button>
-			<br />
-			<p ali>See Documentation:<a href="https://drive.google.com/open?id=1zT1Rj8ylVvy8yTzbNbN6Zo_YtH2ADjn_">Project Report</a></p>
-		</div>
-	</div>
-</body>
+        </title>
+        <link rel="stylesheet" type="text/css" href="./styles/style1.css">
+        <script type="text/javascript" src="./scripts/project-script.js"></script>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner-left">
+                <div class="nav-bar">
+                    <button class="nav-bar-btn" onclick="window.location.href='./index.html'">Home</button>
+                    <button class="nav-bar-btn" onclick="window.location.href='./about.html'">About</button>
+                    <button class="nav-bar-btn" onclick="window.location.href='./blog.html'">Blog</button>
+		            <button class="nav-bar-btn" onclick="window.location.href='./projects.html'">Projects</button>
+		            <button class="nav-bar-btn" onclick="window.location.href='./contact.html'">Contact Me</button>
+                </div>
+                <div class="project-topic">
+                    <button class="project-topic-btn" onclick="listProjects('0')" id='Web Development'>Web Development</button>
+                </div>
+                <div class="project-topic">
+                    <button class="project-topic-btn" onclick="listProjects('1')" id='Database Management' >Database Management</button>
+                </div>
+                <div class="project-topic">
+                    <button class="project-topic-btn" onclick="listProjects('2')" id= 'Data Analytics and Machine Learning'>Data Analytics and Machine Learning</button>
+                </div>
+                <div class="project-topic">
+                    <button class="project-topic-btn" onclick="listProjects('3')" id='Automation and Electronics'>Automation and Electronics</button>
+                </div>
+                <h3 id="project-cat-text"></h3>
+                <div class="project-category">
+                    <div class="project-name">
+                        <button class="project-name-btn" onclick="window.location.href='./contact.html'">Inspire the world</button>
+                        <button class="project-name-btn" onclick="window.location.href='./contact.html'">Travelista: A Travel booking website</button>
+                    </div>
+                    <div class="project-name">
+                        <button class="project-name-btn" onclick="window.location.href='./contact.html'">Audio Video Studio</button>
+                        <button class="project-name-btn" onclick="window.location.href='./contact.html'">PowerChord: Music Store</button>
+                    </div>
+                    <div class="project-name">
+                        <button class="project-name-btn" onclick="projectDisplay(201)">SmartDate: Dating Recommender System</button>
+                        <button class="project-name-btn" onclick="projectDisplay(202)">EY Tax Guide Recommendation System</button>
+                        <button class="project-name-btn" onclick="projectDisplay(203)">Lip Motion feature to text conversion</button>
+                        <button class="project-name-btn" onclick="window.location.href='./contact.html'">Breast Cancer Classification</button>
+                        <button class="project-name-btn" onclick="projectDisplay(205)">Web Traffic Time Series Forecasting</button>
+                    </div>
+                    <div class="project-name">
+                        <button class="project-name-btn" onclick="window.location.href='./contact.html'">Home Automation</button>
+                        <button class="project-name-btn" onclick="window.location.href='./contact.html'">Soccer Truck</button>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-right">
+                <div class="project-main">
+                    <div class="project-bin" id="201">
+                        <h3>SmartDate: Dating Recommender System</h3>
+                        <img src="images/projects/SmartDate.png" width="50%" maxheight = '50%'>
+                        <h2>A dating recommendation system: Data mining from 50 regions from around the globe using tinder and OkCupid. Recommendations based on scores using knowledge graph. Used Deep Knowledge-Aware Network and Collaborative filtering for knowledge inference and to make recommendations.</h2>
+                        <h2>See Code:<a href="https://github.com/kashishoberoi/SmartDate">Github link</a></h2>
+                    </div>
+                    <div class="project-bin" id="202">
+                        <h3>Tax Guide Query-Response Recommendion System</h3>
+                        <img src="images/projects/EY.jpg" width="50%" maxheight = '50%'>
+                        <h2>This project was a part of the EY Silver Badge AI Challenge. An interactive system for recommendations from TAX GUIDE was developed using BM25+ model. The data was pre-processed and bag of words approach was combined with the knowledge of n-grams and POS tags. A flask-python based website was deployed on the SAP cloud.</h2>
+                        <h2>See Documentation:<a href="https://drive.google.com/open?id=1zT1Rj8ylVvy8yTzbNbN6Zo_YtH2ADjn_">Project Report</a></h2>
+                    </div>
+                    <div class="project-main">
+                        <div class="project-bin" id="203">
+                            <h3>Lip Reading</h3>
+                            <img src="images/projects/1.jpg">
+                            <h2>This project aims at tracking the lip region based on colour and shape information. This project begins with the videos being shot focused basically to the lip area. The video thus obtained will be segmented to frames which are used for designing and implementing the experimental models. Further, the extracted images will be processed using MATLAB to correlate every lip image to its equivalent syllable. The final output of this system is the text display of the alphabet spoken by the speaker.  The experimental results have been tested on different frames under constraints of illumination condition and head motion.</h2>
+                            <h2>See Code:<a href="https://github.com/kashishoberoi/LIP_READING">Github link</a></h2>
+                            <h2>See Report:<a href="https://docs.google.com/document/d/1xWLPI2FJ_T_W91uYpKypwHdwfv371N8v_MaXST-SvGQ/edit?usp=sharing">Google Docx</a></h2>
+                        </div>
+                    </div>
+                    <div class="project-main">
+                        <div class="project-bin" id="205">
+                            <h3>Web Traffic Forecasting</h3>
+                            <img src="images/projects/2.png">
+                            <h2>With the recent advancements in internet technology, there is an urge to effectively forecast web traffic. The forecast will help the web servers to handle web requests efficiently. Here, we are using the Web Traffic Time Series Forecasting dataset by Google to predict future traffic of Wikipedia articles.</h2>
+                            <h2>See Code:<a href="https://github.com/kashishoberoi/WebTrafficTimeSeries">Github link</a></h2>
+                            <h2>See Blog:<a href="https://webtrafficforecasting.blogspot.com/">Blogspot</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

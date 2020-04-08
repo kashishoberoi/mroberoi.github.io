@@ -1,44 +1,46 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Profile</title>
-	<script type="text/javascript" src="./scripts/index-script.js"></script>
-	<link rel="stylesheet" type="text/css" href="./styles/style.css">
-</head>
-<body>
-	<div class="nav-bar">
-		<button class=" nav-bar-btn" onclick="window.location.href='./index.html'">Home</button>
-		<!-- <button class="nav-bar-btn " onclick="window.location.href='./blog.html'">Blog</button> -->
-		<button class="nav-bar-btn " onclick="window.location.href='./projects.html'">Projects</button>
-		<div class="dropdown">
-    		<button class="drop-btn">Social</button>
-    		<div class="dropdown-content">
-      			<button class="nav-bar-btn-drop" onclick="window.location.href='https://www.facebook.com/kashish15'">Facebook</button>
-      			<button class="nav-bar-btn-drop" onclick="window.location.href='https://www.linkedin.com/in/oberoi-kashish'">LinkedIN</button>
-      			<button class="nav-bar-btn-drop" onclick="window.location.href='https://github.com/kashishoberoi'">Github</button>
-    		</div>
-  		</div> 
-		<button class="nav-bar-btn nav-bar-btn-active" onclick="window.location.href='./contact.html'">Contact Me</button>
-	</div>
-	<br /><br />
-	<form action="https://mailthis.to/kashish_oberoi1" method="POST" class="contact-form">
-		<div class="elem-group">
-		  <label for="name">Your Name</label>
-		  <input type="text" id="name" name="visitor_name" placeholder="Name" pattern=[A-Z\sa-z]{3,20} required>
-		</div>
-		<div class="elem-group">
-		  <label for="email">Your E-mail</label>
-		  <input type="email" id="email" name="visitor_email" placeholder="Email Address" required>
-		</div>
-		<div class="elem-group">
-		  <label for="title">Reason For Contacting</label>
-		  <input type="text" id="title" name="email_title" required placeholder="Title" pattern=[A-Za-z0-9\s]{8,60}>
-		</div>
-		<div class="elem-group">
-		  <label for="message">Write your message</label>
-		  <textarea id="message" name="visitor_message" placeholder="Message" required></textarea>
-		</div>
-		<button type="submit" id="submit-btn">Send Message</button>
-	  </form>
-</body>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" type="text/css" href="./styles/style1.css">
+        <script type="text/javascript" src="./scripts/project-script.js"></script>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner-left">
+                <div class="nav-bar">
+                    <button class="nav-bar-btn" onclick="window.location.href='./index.html'">Home</button>
+                    <button class="nav-bar-btn" onclick="window.location.href='./about.html'">About</button>
+                    <button class="nav-bar-btn" onclick="window.location.href='./blog.html'">Blog</button>
+		            <button class="nav-bar-btn" onclick="window.location.href='./projects.html'">Projects</button>
+		            <button class="nav-bar-btn" onclick="window.location.href='./contact.html'">Contact Me</button>
+				</div>
+				<div class='contact-div'>
+					<form action="https://mailthis.to/kashish_oberoi1" method="POST" class="contact-form">
+						<div class="elem-group">
+						<label for="name">Your Name</label><br />
+						<input type="text" id="name" name="visitor_name" placeholder="Name" pattern=[A-Z\sa-z]{3,20} required>
+						</div>
+						<div class="elem-group">
+						<label for="email">Your E-mail</label><br />
+						<input type="email" id="email" name="visitor_email" placeholder="Email Address" required>
+						</div>
+						<div class="elem-group">
+						<label for="title">Reason For Contacting</label><br />
+						<input type="text" id="title" name="email_title" required placeholder="Title" pattern=[A-Za-z0-9\s]{8,60}>
+						</div>
+						<div class="elem-group">
+						<label for="message">Write your message</label><br />
+						<textarea id="message" rows="4" cols="50" name="visitor_message" placeholder="Message" required></textarea>
+						</div>
+						<button type="submit" id="submit-btn">Send Message</button>
+					</form>
+				</div>
+            </div>
+            <div class="inner-right">
+                
+            </div>
+        </div>
+    </body>
 </html>

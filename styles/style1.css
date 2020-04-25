@@ -213,3 +213,63 @@ background-color:#484848;
     font-size: 1.2em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin: 0.5%;
+  width: inherit;
+  }
+
+  .social-btn-facebook
+  {
+    background: url('./../images/icons/facebook.jpg');
+    background-size: 2em;
+    background-repeat: no repeat;
+    background-size: 100%;
+    width:2em;
+    height:2em;
+    border:0;
+  }
+
+  .social-btn-instagram
+  {
+    background: url('./../images/icons/instagram.jpg');
+    background-size: 2em;
+    background-repeat: no repeat;
+    background-size: 100%;
+    width:2em;
+    height:2em;
+    border:0;
+  }
+
+  .social-btn-gmail
+  {
+    background: url('./../images/icons/gmail.png');
+    background-size: 2em;
+    background-repeat: no repeat;
+    background-size: 100%;
+    width:2em;
+    height:2em;
+    border:0;
+  }
+  .social-btn-twitter
+  {
+    background: url('./../images/icons/twitter.png');
+    background-size: 2em;
+    background-repeat: no repeat;
+    background-size: 100%;
+    width:2em;
+    height:2em;
+    border:0;
+  }
+  .social-btn-linkedIn
+  {
+    background: url('./../images/icons/linkedIn.png');
+    background-size: 2em;
+    background-repeat: no repeat;
+    background-size: 100%;
+    width:2em;
+    height:2em;
+    border:0;
+  }

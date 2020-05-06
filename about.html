@@ -4,6 +4,7 @@
 
         </title>
         <link rel="stylesheet" type="text/css" href="./styles/style1.css">
+        <script type="text/javascript" src="./scripts/about.js"></script>
     </head>
     <body>
         <div class="outer">
@@ -16,28 +17,99 @@
 		            <button class="nav-bar-btn" onclick="window.location.href='./contact.html'">Contact Me</button>
                 </div>
                 <div class="about-me">
-                    <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h3>
+                    <h3>Funny Thing about Computer Science is, If you believe you know everything about it then you don't know anything.</h3>
+                    <div class="project-topic">
+                        <button class="project-topic-btn" onclick="displayAboutMe('education')" id='education' >Education</button>
+                    </div>
+                    <div class="project-topic">
+                        <button class="project-topic-btn" onclick="displayAboutMe('work-experience')" id='work-experience' >Work Experience</button>
+                    </div>
+                    <div class="project-topic">
+                        <button class="project-topic-btn" onclick="displayAboutMe('awards')" id='awards' >Honors and Awards</button>
+                    </div>
+                    <div class="project-topic">
+                        <button class="project-topic-btn" onclick="displayAboutMe('courses')" id='courses' >Courses</button>
+                    </div>
                 </div>
             </div>
             <div class="inner-right">
-                <div class="about-title">
-                    <h2>WORK EXPERIENCE</h2>
+                <div class="work-experience about-bin">
+                    <div class="about-title">
+                        <h2>WORK EXPERIENCE</h2>
+                    </div>
+                    <div class ="about-work">
+                        <h2>SAMSUNG Research and Development</h2>
+                        <h3>Research Intern<br />05/2020 - 07/2020</h3>
+                        <h2>EY-GDS Ernst and Young</h2>
+                        <h3>Data Analytics Intern<br />06/2019 - 08/2019</h3>       
+                        <h3>Click here:<a href="https://mroberoi.blogspot.com/2020/04/from-scatch-to-top.html">My Internship experience</a></h3>
+                    </div>
                 </div>
-                <div class ="about-work">
-                    <h2>SAMSUNG Research and Development</h2>
-                    <h3>Research Intern<br />05/2020 - 07/2020</h3>
-                    <h2>EY-GDS Ernst and Young</h2>
-                    <h3>Data Analytics Intern<br />06/2019 - 08/2019</h3>       
-                    <h3>Click here:<a href="https://mroberoi.blogspot.com/2020/04/from-scatch-to-top.html">My Internship experience</a></h3>
+                <div class="education about-bin">
+                    <div class="about-title">
+                        <h2>EDUCATION</h2>
+                    </div>
+                    <div class ="about-education">
+                        <h2>Graduation:</h2>
+                        <h3>Bachelor in Technology<br />Computer Science Engineering <br />PES University, Bengaluru </h3>
+                        <h2>Higher Secondary School:</h2>
+                        <h3>Science and Technology<br />Veda Vyasa DAV Public School, New Delhi </h3>
+                    </div>
                 </div>
-                <div class="about-title">
-                    <h2>EDUCATION</h2>
+
+                <div class="awards about-bin">
+                    <div class="about-title">
+                        <h2>Honors And Awards</h2>
+                    </div>
+                    <div class="about-awards">
+                        <ul>
+                            <li>
+                                Prof. CNR Rao Scholarship
+                            </li>
+                            <li>
+                                Head of School Council
+                            </li>
+                            <li>
+                                L. R. Ram Punshi Scholarship
+                            </li>
+                            <li>
+                                President, Rotaract Club of West Delhi
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class ="about-education">
-                    <h2>Graduation:</h2>
-                    <h3>Bachelor in Technology<br />Computer Science Engineering <br />PES University, Bengaluru </h3>
-                    <h2>Higher Secondary School:</h2>
-                    <h3>Science and Technology<br />Veda Vyasa DAV Public School, New Delhi </h3>
+
+                <div class="courses about-bin">
+                    <div class="about-title">
+                        <h2>Courses</h2>
+                    </div>
+                    <div class="about-courses">
+                        <ul>
+                            <h2>Core Subjects:</h2>
+                            <li>Data Structures</li>
+                            <li>Design and Analysis of Algorithm</li>
+                            <li>Theory of Computation</li>
+                            <li>Microprocessor and Computer Organization</li>
+                            <li>Database Management Systems</li>
+                            <li>Computer Networks</li>
+                            <li>Introduction of Operating System</li>
+                            <li>Machine Learning</li>
+                            <li>Compiler Design</li>
+                            <li>Web Technologies</li>
+                            <h2>Elective Courses:</h2>
+                            <li>Data Analytics</li>
+                            <li>Computer Vision</li>
+                            <li>R Programming</li>
+                            <li>Big Data</li>
+                            <li>Cloud Computing</li>
+                            <li>Generic Programming</li>
+                            <h2>Online Certifications:</h2>
+                            <li>Deep Learning A-Z™: Hands-On Artificial Neural Networks</li>
+                            <li>Django 2.2 & Python | The Ultimate Web Development</li>
+                            <li>Introduction to Natural Language Processing (NLP)</li>
+                            <li>R -Programming A-Z: R for Data Science</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

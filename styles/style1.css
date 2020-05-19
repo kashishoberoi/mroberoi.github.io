@@ -279,7 +279,75 @@ footer{
 {
   display: none;
 }
-.social-networks
+
+blockquote{
+  font-size: 1.2em;
+  width:60%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1em 30px 1em 75px;
+  border-left:8px solid grey ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color: grey;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+
+blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+
+/* .profile-photo
 {
-  
+  height: 20em;
+  margin: 1em;
+} */
+
+.profile-photo {
+  margin: 1em;
+  float:left; 
+  height:20em;
+  /* width:40px; */
+  } 
+ 
+ .containerBox {
+ /* width:300px;
+ height:60px;
+ padding:1px; */
+ background-color:#303030;
+ }
+ .profile-text{
+ margin:1em;
+ margin-top:3%;
+ margin-left:50px;
+ color:#383838;
+ }
+
+ul li {
+  background: #303030;
+  margin-left: 5em;
+  list-style-type: square;
+}
+.list-head
+{
+  color: #6e6060;
 }

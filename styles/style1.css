@@ -279,7 +279,7 @@ footer{
 {
   display: none;
 }
-
+/* 
 blockquote{
   font-size: 1.2em;
   width:60%;
@@ -314,7 +314,7 @@ blockquote span{
   font-style: normal;
   font-weight: bold;
   margin-top:1em;
-}
+} */
 
 /* .profile-photo
 {
@@ -345,7 +345,7 @@ blockquote span{
 ul li {
   background: #303030;
   margin-left: 5em;
-  list-style-type: square;
+  list-style-type: none;
 }
 .list-head
 {
